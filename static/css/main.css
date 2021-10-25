@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
+    background-color: #77abb7;
 }
 nav {
     height: 3.5em;
@@ -32,6 +33,9 @@ nav > a {
     font-family: sans-serif;
     font-size: large;
 }
+h1 {
+    margin: .5em 0;
+}
 
 #body-content {
     position: absolute;
@@ -49,23 +53,46 @@ h1 {
 }
 
 .cv-card {
-    background-color: rgba(187, 187, 187, 0.7);
+    background-color: rgba(255, 255, 255, 0.75);
     height: inherit;
     width: inherit;
-    padding: 12px;
+    padding: 5px 20px;
     max-width: 1200px;
     margin: 1rem auto;
 }
 
 .body-content-wrapper {
-    padding: 1rem;
+    padding: 0 1.5rem;
 }
 
 .links-group {
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .my-name {
     text-decoration: underline;
+}
+
+.pub-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pub-table-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pub-table-row-title {
+    min-width: 125px;
+}
+
+.pub-table-row-value {
+    width: 15px;
 }
