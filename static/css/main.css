@@ -33,43 +33,50 @@ nav > a {
     font-family: sans-serif;
     font-size: large;
 }
-h1 {
-    margin: .5em 0;
-}
 
-#body-content {
+.body-content {
     position: absolute;
     width: 100%;
     top: 3.5em;
     bottom: 0;
     overflow-y: scroll;
 }
-#body-content > div {
-    position: relative;
-}
 
-h1 {
-    text-align: center;
+.body-content-wrapper {
+    padding: 0 1.5rem;
 }
 
 .cv-card {
     background-color: rgba(255, 255, 255, 0.75);
     height: inherit;
     width: inherit;
-    padding: 5px 20px;
+    padding: 20px;
     max-width: 1200px;
     margin: 1rem auto;
 }
 
-.body-content-wrapper {
-    padding: 0 1.5rem;
+.cv-card > a {
+    display: block;
+    text-align: center;
 }
 
-.links-group {
+.cv-card > h1, h2 {
+    text-align: center;
+}
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+button {
+    margin: 2px 0;
+    padding: 2px 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
 }
 
 .my-name {
@@ -95,4 +102,37 @@ h1 {
 
 .pub-table-row-value {
     width: 15px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.author {
+    font-style: italic;
+}
+
+.details {
+    padding-right: 1ch;
+}
+
+::marker {
+    font-weight: bolder
+}
+
+.publication-list > li {
+    padding-top: 10px;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}
+
+u {
+    text-decoration: none;
+}
+.label > u {
+    font-weight: bold;
+}
+.label {
+    display: inline;
+    color: green;
 }

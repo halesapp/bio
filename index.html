@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-  <title>Riley Hales - Curriculum Vitae</title>
+  <title>Curriculum Vitae</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Curriculum Vitae">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- todo -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJL17V6MYF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-WJL17V6MYF");
+  </script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="static/css/main.css">
-  <link rel="stylesheet" href="/static/css/publication.css">
+  <link rel="stylesheet" href="/static/css/main.css">
 </head>
 
 <body>
@@ -21,65 +26,106 @@
   <a href="/"><div>rileyhales.com</div></a>
 </nav>
 
-<div id="body-content">
+<div class="body-content">
   <div class="body-content-wrapper">
     <div class="cv-card" id="summary">
       <h1>Riley Hales</h1>
-      <div class="links-group">
-        <a href="https://docs.google.com/document/d/16VeoburG1DY78TGOEaM9uH2VA0VWms5WK4rFJYQxMYM/edit?usp=sharing" target="_blank" rel="noreferrer noopener">View CV on Google Docs</a>
-        <a href="https://scholar.google.com/citations?user=cBIcYY0AAAAJ" target="_blank" rel="noreferrer noopener">Google Scholar</a>
-        <a href="https://www.youtube.com/channel/UCsSFtyPGwhDRh9tuHIFz8iQ" target="_blank" rel="noreferrer noopener">YouTube</a>
-        <a href="" target="_blank" rel="noreferrer noopener">Instagram</a>
-      </div>
+      <button><a href="https://docs.google.com/document/d/16VeoburG1DY78TGOEaM9uH2VA0VWms5WK4rFJYQxMYM/edit?usp=sharing" target="_blank" rel="noreferrer noopener">View CV on Google Docs</a></button>
+      <button><a href="https://scholar.google.com/citations?user=cBIcYY0AAAAJ" target="_blank" rel="noreferrer noopener">Google Scholar Profile</a></button>
+      <button><a href="https://www.linkedin.com/in/rileyhales/" target="_blank" rel="noreferrer noopener">LinkedIn</a></button>
+      <button><a href="https://www.youtube.com/channel/UCsSFtyPGwhDRh9tuHIFz8iQ" target="_blank" rel="noreferrer noopener">YouTube</a></button>
+    </div>
+
+    <div class="cv-card">
+      <h1>Contents</h1>
+      <a href="#education">Education and Distinctions</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work Experience</a>
+      <a href="#service">Service and Volunteer Work</a>
+      <a href="#publications">Academic Publications</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#related">Related Links</a>
     </div>
 
     <div class="cv-card" id="education">
       <h1>Education and Distinctions</h1>
-      <h2>Member - Phi Kappa Phi Honor Society</h2>
+      <h3>Member - Phi Kappa Phi Honor Society</h3>
       <ul>
         <li>Inducted: Brigham Young University, 2021</li>
       </ul>
-      <h2>PhD - Civil Engineering - Brigham Young University</h2>
+      <h3>PhD - Civil Engineering - Brigham Young University</h3>
       <ul>
         <li>Anticipated Graduation: April 2024</li>
         <li>GPS: 4.0</li>
       </ul>
 
-      <h2>MS - Civil Engineering - Brigham Young University</h2>
+      <h3>MS - Civil Engineering - Brigham Young University</h3>
       <ul>
         <li>April 2021</li>
         <li>GPA: 4.0</li>
       </ul>
 
-      <h2>BS - Civil Engineering - Brigham Young University</h2>
+      <h3>BS - Civil Engineering - Brigham Young University</h3>
       <ul>
         <li>April 2020</li>
         <li>GPA: 3.5</li>
       </ul>
     </div>
 
+    <div class="cv-card" id="skills">
+      <h1>Skills</h1>
+      <ul>
+        <li>Hydrologic, Hydraulic, Groundwater Modeling</li>
+        <li>Model Analysis</li>
+        <li>Decision Making Support Systems</li>
+        <li>Geospatial Analysis - ArcGIS, QGIS, Python</li>
+        <li>Scientific Computing & Programming</li>
+        <li>Python</li>
+        <li>Cloud Computing and Web Services</li>
+        <li>Web App Development (React, Django, Flask)</li>
+        <li>Machine Learning</li>
+        <li>Data Collection and Analysis</li>
+        <li>Technical Communication and Presentation</li>
+      </ul>
+    </div>
+
     <div class="cv-card" id="work">
       <h1>Work Experience</h1>
-      <h3>Hydroinformatics Researcher Apr 2018 - Current</h3>
-      <h4>GEOGloWS ECMWF Global Streamflow Service</h4>
+
+      <h2>Researcher - Applied Hydrology and Hydroinformatics (Apr '18 - Present)</h2>
+
+      <h3>Relevant Project - GEOGloWS ECMWF Streamflow Service</h3>
       <ul>
-        <li>Contributed to creating a daily operational, deterministic global hydrologic ensemble forecasting model</li>
-        <li>Collaborated with ESRI, ECMWF to move research project to a fully operational professional environment</li>
-        <li>Developed a REST API deployed at ECMWF for programmatic access to hydrologic modeling as a service</li>
-        <li>Programmed a python package and web apps which facilitate access to the model results</li>
+        <li>Built a global hydrologic model providing discharge forecasts for ~1 million reporting points</li>
+        <li>Developed a data web service with documentation and programming packages to make model results accessible in standard formats</li>
+        <li>Collaborated with Esri to create a web map service using state-of-the-art animation and visualization practices</li>
+        <li>Trained hydromet agencies worldwide to use global data services for local level analysis and decision making</li>
+        <li>Managed professional relationships with Esri, ECMWF, Azure, World Bank, NASA, GEO, NOAA, USAID, FEWSNET and others</li>
       </ul>
-      <h4>Hydrometeorological Data Web Apps</h4>
+
+      <h3>Spatiotemporal Data Tools</h3>
       <ul>
-        <li>Create a flexible, extensible web application to show gridded earth observation datasets</li>
-        <li>Managed cloud computer resources and architecture, international deployment of products</li>
         <li>Published GIS python package and web apps, and engineered scientific data processing workflows</li>
-        <li>Trained NASA sponsors and leaders of international hydrometeorology organizations</li>
+        <li>Supported development and adherence to community standards and conventions for data formatting</li>
+        <li>Created web application to show multidimensional gridded datasets and earth observations</li>
+        <li>Managed cloud computer resources and architecture, international deployment of products</li>
+        <li>Trained NASA sponsors and leaders of international organizations to create and use multidimensional datasets</li>
       </ul>
-      <h4>Disease Spread Prediction- Collaboration with Johns Hopkins University</h4>
+
+      <h3>All Projects</h3>
       <ul>
-        <li>Researched with an interdisciplinary team predicting malaria and enteric disease spread</li>
-        <li>Used remote sensing forecast data and land surface modeling to produce ensemble predictions of risk</li>
-        <li>Developed a web app make the modeling results accessible to stakeholders in India and Peru</li>
+        <li>Regional Bias Correction of Large Hydrologic Models</li>
+        <li>Flood Inundation Extent and Impact Forecasting/Mapping</li>
+        <li>Scientific Web Tool Development</li>
+        <li>Analysis of Multidimensional Spatiotemporal Datasets</li>
+        <li>Enteric disease spread risk forecasting - Johns Hopkins University</li>
+        <li>Liquefaction Risk Analysis</li>
+        <li>Tethys Platform - Web App Framework</li>
+      </ul>
+
+      <h2>BYU Civil Engineering Teaching Assistant</h2>
+      <ul>
+        <li>CEEN 114 Geomatics (Intro GIS, Surveying) </li>
       </ul>
     </div>
 
