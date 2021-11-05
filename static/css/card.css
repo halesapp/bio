@@ -46,19 +46,6 @@ hr {
     border: 1px solid #0000008f;
     width: 100%;
 }
-.icons-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-.icons-container > * {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 a.full {
     width: 100%;
     margin: 8px 0;
