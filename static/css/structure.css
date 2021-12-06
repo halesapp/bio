@@ -14,7 +14,7 @@ body {
     background-color: #e3dbdb;
 }
 nav {
-    height: 3.5em;
+    height: 5em;
     top: 0;
     width: 100%;
     display: flex;
@@ -35,7 +35,7 @@ nav > a {
 .body-content-wrapper {
     position: absolute;
     width: 100%;
-    top: 3.5em;
+    top: 5em;
     bottom: 0;
     overflow-y: scroll;
 }
