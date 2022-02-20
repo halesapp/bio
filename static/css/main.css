@@ -51,7 +51,7 @@ nav > a {
     height: inherit;
     width: inherit;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 1rem auto;
 }
 
@@ -135,4 +135,39 @@ u {
 .label {
     display: inline;
     color: green;
+}
+
+.icons-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.icon-link {
+    margin: 0 5px;
+}
+.nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.nav-li {
+    width: 45%;
+    margin: 5px 1%;
+    display: inline-flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid black;
+    border-radius: 20px;
+    background: #dedede;
+}
+.nav-li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
 }
