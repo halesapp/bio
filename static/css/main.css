@@ -181,7 +181,7 @@ u {
     flex: 1 1 auto;
 }
 
-ul {
+ul, ol {
     padding-inline-start: 20px;
 }
 
