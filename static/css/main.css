@@ -121,7 +121,7 @@ u {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px 0;
+    margin: 10px 0;
     flex-wrap: wrap;
 }
 
@@ -164,6 +164,7 @@ u {
     display: grid;
     width: 90%;
     margin: auto;
+    text-align: center;
 }
 .table.col3 {
     grid-template-columns: auto auto auto;
@@ -178,6 +179,10 @@ u {
 }
 .skill-grid > div {
     flex: 1 1 auto;
+}
+
+ul {
+    padding-inline-start: 20px;
 }
 
 @media screen and (max-width: 600px) {
