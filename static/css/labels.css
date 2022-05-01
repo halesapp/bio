@@ -1,4 +1,21 @@
+.label {
+    display: inline;
+    color: green;
+    padding-right: 10px;
+}
+.label > u {
+    font-weight: bold;
+}
+u {
+    text-decoration: none;
+}
 .label-pending {
     color: purple;
+    font-weight: bold;
+}
+.my-name {
+    text-decoration: underline;
+}
+.title {
     font-weight: bold;
 }

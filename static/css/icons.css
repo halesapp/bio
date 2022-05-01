@@ -1,0 +1,10 @@
+.icon-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.icon-link {
+    margin: 0 5px;
+}

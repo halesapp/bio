@@ -1,0 +1,75 @@
+.card > a {
+    display: block;
+    text-align: center;
+}
+
+.card > h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+button {
+    margin: 2px 0;
+    padding: 2px 0;
+    width: 100%;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+}
+
+.author {
+    font-style: italic;
+}
+
+.details {
+    padding-right: 1ch;
+}
+
+::marker {
+    font-weight: bolder
+}
+
+.publication-list > li {
+    padding-top: 10px;
+    border-top: 2px dashed black;
+    margin-top: 10px;
+}
+
+
+.table {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.table.col3 {
+    grid-template-columns: auto auto auto;
+}
+.table.col2 {
+    grid-template-columns: auto auto;
+}
+
+.skill-grid {
+    display: flex;
+    width: 100%;
+}
+.skill-grid > div {
+    flex: 1 1 auto;
+}
+
+ul, ol {
+    padding-inline-start: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .skill-grid {
+        flex-direction: column;
+    }
+
+}
