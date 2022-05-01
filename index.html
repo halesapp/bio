@@ -2,54 +2,82 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-  <title>Curriculum Vitae</title>
+  <title>Riley Hales Bio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Curriculum Vitae">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Scripts -->
+  <script src="static/js/navControls.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/labels.css">
+  <link rel="stylesheet" href="/static/css/icons.css">
+  <link rel="stylesheet" href="/static/css/misc.css">
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJL17V6MYF"></script>
   <script>
       window.dataLayer = window.dataLayer || []
-      function gtag() {dataLayer.push(arguments)}
+      const gtag = () => dataLayer.push(arguments)
       gtag("js", new Date())
       gtag("config", "G-WJL17V6MYF")
   </script>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/static/css/layout.css">
-  <link rel="stylesheet" href="/static/css/labels.css">
 </head>
 
 <body>
 
-<nav>
-  <div>Riley Hales, MS</div>
-</nav>
+<div class="header">
+  <div class="header-title">Riley Hales</div>
+  <div class="header-links">
+    <div onclick="showBio()">Bio</div>
+    <div onclick="showCV()">CV</div>
+  </div>
+</div>
 
-<div class="content-wrapper">
-  <div class="content">
+<div class="content">
+  <div class="content-item" id="bio">
+    <div class="card">
+      I'm a hydraulics and hydrology researcher which and has been part of the GEOGloWS streamflow modeling project since April 2018.
+      He contributed to the development of the GEOGloWS ECMWF Streamflow hydrologic model and designed the web services and apps which make that project unique in the hydrology world.
+      He is experienced in numerical water modelling, statistical analysis, machine learning, web technologies, and decision support systems.
+      Through the GEOGloWS project, he has been involved in projects to increase the water management capacity of hydrometeorological agencies in more than a dozen countries.
+      He is currently a doctoral student in Civil Engineering at Brigham Young University with Dr Jim Nelson.
+
+      <div class="icon-links">
+        <a class="icon-link" href="https://scholar.google.com/citations?user=cBIcYY0AAAAJ" target="_blank">
+          <img src="static/svg/icons8-google-scholar.svg" alt="Google Scholar Logo">
+        </a>
+        <a class="icon-link" href="https://docs.google.com/document/d/16VeoburG1DY78TGOEaM9uH2VA0VWms5WK4rFJYQxMYM/edit?usp=sharing" target="_blank" rel="noreferrer noopener">
+          <img src="static/svg/icons8-document.svg" style="height: 48px" alt="Document Icon">
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/rileyhales/" target="_blank" rel="noreferrer noopener">
+          <img src="static/svg/icons8-linkedin.svg" alt="LinkedIn Logo">
+        </a>
+        <a class="icon-link" href="https://www.youtube.com/channel/UCsSFtyPGwhDRh9tuHIFz8iQ" target="_blank" rel="noreferrer noopener">
+          <img src="static/svg/icons8-youtube.svg" alt="YouTube Logo">
+        </a>
+        <a class="icon-link" href="https://www.instagram.com/rileyhales/" target="_blank" rel="noreferrer noopener">
+          <img src="static/svg/icons8-instagram.svg" alt="Instagram Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-item hide" id="cv">
 
     <div class="card">
-      <div class="icons-flex" id="summary">
-        <a class="icon-link" href="https://scholar.google.com/citations?user=cBIcYY0AAAAJ" target="_blank"><img src="static/svg/icons8-google-scholar.svg" alt="Google Scholar Logo"></a>
-        <a class="icon-link" href="https://docs.google.com/document/d/16VeoburG1DY78TGOEaM9uH2VA0VWms5WK4rFJYQxMYM/edit?usp=sharing" target="_blank" rel="noreferrer noopener"><img
-            src="static/svg/icons8-document.svg" style="height: 48px" alt="Document Icon"></a>
-        <a class="icon-link" href="https://www.linkedin.com/in/rileyhales/" target="_blank" rel="noreferrer noopener"><img src="static/svg/icons8-linkedin.svg" alt="LinkedIn Logo"></a>
-        <a class="icon-link" href="https://www.youtube.com/channel/UCsSFtyPGwhDRh9tuHIFz8iQ" target="_blank" rel="noreferrer noopener"><img src="static/svg/icons8-youtube.svg" alt="YouTube Logo"></a>
-        <a class="icon-link" href="https://www.instagram.com/rileyhales/" target="_blank" rel="noreferrer noopener"><img src="static/svg/icons8-instagram.svg" alt="Instagram Logo"></a>
+      <div class="shortcuts">
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#service">Service</a>
+        <a href="#publications">Papers</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#grants">Grants</a>
+        <a href="#related">Links</a>
       </div>
-
-      <ul class="nav-ul">
-        <li class="nav-li"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-li"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-li"><a class="nav-link" href="#work">Work</a></li>
-        <li class="nav-li"><a class="nav-link" href="#service">Service</a></li>
-        <li class="nav-li"><a class="nav-link" href="#publications">Papers</a></li>
-        <li class="nav-li"><a class="nav-link" href="#conferences">Conferences</a></li>
-        <li class="nav-li"><a class="nav-link" href="#grants">Grants</a></li>
-        <li class="nav-li"><a class="nav-link" href="#related">Links</a></li>
-      </ul>
     </div>
 
     <div class="card" id="education">
@@ -392,7 +420,8 @@
             <div class="label">Poster</div>
             Global Water Sustainability Tools from Earth Observations for the Americas
           </div>
-          <div class="author">Jim Nelson, Jason Biesinger, Norm Jones, Daniel P Ames, <u class="my-name">Riley Hales</u>, Gustavious P Williams, Angelica Gutierrez-Magness, Chris Edwards, Kyler Ashby,
+          <div class="author">Jim Nelson, Jason Biesinger, Norm Jones, Daniel P Ames, <u class="my-name">Riley Hales</u>, Gustavious P Williams, Angelica Gutierrez-Magness, Chris Edwards, Kyler
+            Ashby,
             Rohit Khattar
           </div>
           <div class="details">AGU Fall Meeting Abstracts, 12 December 2019</div>
@@ -446,7 +475,7 @@
           <a target="_blank" href="https://doi.org/10.33548/SCIENTIA682">doi: 10.33548/SCIENTIA682</a>
         </li>
         <li>
-          <div class="title">AGU 2020 Spotlights - AGU 2020</div>
+          <div class="title">AGU 2020 Conference Spotlights</div>
           <a target="_blank" href="https://youtu.be/PLG8U8AQmXY">Video on Youtube</a>
           <a target="_blank" href="https://www.youtube.com/playlist?list=PLGVe6BxyFHNVUHtrPzoMImjHBe9Yr24Jo">YouTube Playlist of all AGU 2020 videos</a>
         </li>
