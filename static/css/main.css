@@ -32,6 +32,7 @@ body {
 .header-links {
     display: flex;
 }
+
 .header-links > * {
     padding-inline: 8px;
     cursor: pointer;
@@ -56,10 +57,12 @@ body {
     position: absolute;
     overflow-y: auto;
 }
+
 .hide {
     opacity: 0;
     z-index: -1;
 }
+
 .card {
     background-color: rgba(255, 255, 255, 0.7);
     padding-block: 15px;
@@ -69,13 +72,19 @@ body {
     margin: 1rem auto;
     border-radius: 30px;
 }
+
 .shortcuts {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .shortcuts > a {
     text-decoration: none;
     color: blue;
+}
+
+.summary-items {
+    text-align: center;
 }
